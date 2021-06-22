@@ -1,4 +1,4 @@
-import axios from 'axios'
+import http from "../../HTTP/http"
 import { useState } from 'react'
 import './estilos.css'
 
@@ -27,7 +27,7 @@ const FormularioCadastro = () => {
             senha: senha
         }
 
-        axios.post('http://localhost:8000/auth/register', usuario)
+        http.post('auth/register', usuario)
             .then(response => console.log(response.data))
             .catch(erro => {
                 console.log('Algo deu errado')

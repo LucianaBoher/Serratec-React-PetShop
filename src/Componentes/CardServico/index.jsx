@@ -4,7 +4,7 @@ import './estilos.css'
 
 const CardServico = ({nome, preco}) => {
     return (
-        <div className="card">
+        <div className="cardS">
             <h3>{nome}</h3>
             <p>R$ {preco}</p>
             <p>Descrição:</p>

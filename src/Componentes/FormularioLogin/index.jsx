@@ -1,4 +1,4 @@
-import axios from 'axios'
+import http from "../../HTTP/http"
 import { useState } from 'react'
 import './estilos.css'
 
@@ -22,7 +22,7 @@ const FormularioLogin = () => {
             senha: senha
         }
 
-        axios.post('http://localhost:8000/auth/login', usuario)
+        http.post('auth/login', usuario)
             .then(response => {
                 console.log(response.data)
                 localStorage.setItem('token', response.data.access_token)
