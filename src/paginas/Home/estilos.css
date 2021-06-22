@@ -1,0 +1,21 @@
+.fundo-escuro {
+  background-color: #1abc9c;
+}
+.principal {
+  padding: 50px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.principal img {
+  width: 350px;
+  max-width: 90%;
+}
+.principal h1 {
+  margin: 35px 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+.principal h2 {  
+  margin: 35px 0;
+  font-family: sans-serif;
+}
