@@ -1,4 +1,4 @@
-import axios from "axios"
+import http from "../../HTTP/http"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
@@ -10,7 +10,7 @@ const Servico = () => {
     const [servico, setServico] = useState({})
 
     useEffect(() => {
-        axios.get('http://localhost:8000/servicos/'+id)
+        http.get('servicos/'+id)
             .then(response => setServico(response.data))
     }, [id])
     return(

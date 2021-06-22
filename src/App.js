@@ -8,6 +8,8 @@ import Produtos from './paginas/Produtos/'
 import Servicos from './paginas/Servicos'
 import Produto from './paginas/Produtos/Produto'
 import Servico from './paginas/Servicos/Servico'
+import FormularioCadastro from './Componentes/FormularioCadastro'
+import FormularioLogin from './Componentes/FormularioLogin'
 
 
 function App() {
@@ -31,6 +33,12 @@ function App() {
         </Route>
         <Route path="/servicos/:id">
           <Servico />
+        </Route>
+        <Route path="/cadastro">
+          <FormularioCadastro />
+        </Route>
+        <Route path="/login">
+          <FormularioLogin />
         </Route>
         <Route>
           <Pagina404 />

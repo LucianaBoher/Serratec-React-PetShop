@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
-import axios from "axios"
+import http from "../../HTTP/http"
 
-import Item from "../../Componentes/Item"
+import CardItensServicos from "./CardItensServicos"
 
 
 const Servicos = () => {
@@ -10,24 +10,24 @@ const Servicos = () => {
     const [servicos, setServicos] = useState([]);
 
     const obterServicos = () => {
-        axios.get('http://localhost:8000/servicos')
-          .then( response => { setServicos(response.data) })
-          .catch( erro => { console.log(erro) })
-      }
+        http.get('servicos')
+            .then(response => { setServicos(response.data) })
+            .catch(erro => { console.log(erro) })
+    }
 
     useEffect(() => {
         obterServicos();
-    },[]);
+    }, []);
 
-    return(
-         <ul>
-            {servicos.map((item) => <Item 
-                key={item.id}
-                id={item.id}
-                itemNome={item.nome}
-                itemPreco={item.preco} />)}
-         </ul>  
-                  
+    return (
+        <ul>
+            {servicos.map((servico) => <CardItensServicos
+                key={servico.id}
+                id={servico.id}
+                nome={servico.nome}
+                preco={servico.preco} />)}
+        </ul>
+
     );
 }
 

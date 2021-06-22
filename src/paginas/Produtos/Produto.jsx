@@ -1,4 +1,4 @@
-import axios from "axios"
+import http from "../../HTTP/http"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
@@ -10,11 +10,13 @@ const Produto = () => {
     const [produto, setProduto] = useState({})
 
     useEffect(() => {
-        axios.get('http://localhost:8000/produtos/'+id)
+        http.get('produtos/'+id)
             .then(response => setProduto(response.data))
     }, [id])
+
+
     return(
-        <CardProduto nome={produto.nome} preco={produto.preco} id={produto.id} />
+        <CardProduto nome={produto.nome} preco={produto.preco}/>
     )
 }
 

@@ -1,13 +1,15 @@
-import {Link} from 'react-router-dom'
+import { LoremIpsum } from 'react-lorem-ipsum'
 import './estilos.css'
 
 
-const CardServico = ({nome, preco, id}) => {
+const CardServico = ({nome, preco}) => {
     return (
         <div className="card">
             <h3>{nome}</h3>
             <p>R$ {preco}</p>
-            <Link to={`/servicos/${id}`}>Adicionar ao carrinho</Link>
+            <p>Descrição:</p>
+            <LoremIpsum p={1} />
+            <button>Adicionar ao carrinho</button>
         </div>
     )
 }

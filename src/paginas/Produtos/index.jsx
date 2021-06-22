@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 
-import axios from "axios"
+import http from "../../HTTP/http"
 
-import Item from "../../Componentes/Item"
+import CardItensProdutos from "./CardItensProdutos"
 
 
 const Produtos = () => {
@@ -10,23 +10,23 @@ const Produtos = () => {
     const [produtos, setProdutos] = useState([]);
 
     const obterProdutos = () => {
-        axios.get('http://localhost:8000/produtos')
-          .then( response => { setProdutos(response.data) })
-          .catch( erro => { console.log(erro) })
+        http.get('produtos')
+            .then(response => { setProdutos(response.data) })
+            .catch(erro => { console.log(erro) })
     }
 
     useEffect(() => {
         obterProdutos();
-    },[]);
+    }, []);
 
-    return(
+    return (
         <ul>
-            {produtos.map((item) => <Item 
-                key={item.id}
-                id={item.id}
-                itemNome={item.nome}
-                itemPreco={item.preco} />)}
-        </ul>        
+            {produtos.map((produto) => <CardItensProdutos
+                key={produto.id}
+                id={produto.id}
+                nome={produto.nome}
+                preco={produto.preco} />)}
+        </ul>
     );
 }
 

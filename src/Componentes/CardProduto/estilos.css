@@ -1,12 +1,14 @@
 .card {
-    display: block;
+    display:block;
+    /* position:fixed; */
     padding: 50px;
     background-color: greenyellow;
     border: 3px solid rgb(44, 156, 44);
     border-radius: 5px;
-    margin-top: 70px;
-    margin-left: 660px;
-    width: 100px;
+    /* margin-top: 70px; */
+    /* margin-left: 60px; */
+    min-width: 700px;
+    min-height: 200px;
     justify-content: center;
     text-align: center;
 }
