@@ -55,7 +55,7 @@ const FormularioCadastro = () => {
                 </div>
                 <div>
                     <label>Senha</label>
-                    <input required type="password" value={senha} onChange={manipuladorSenha} />
+                    <input required minLength="8" type="password" value={senha} onChange={manipuladorSenha} />
                 </div>
                 <button>
                     Cadastrar

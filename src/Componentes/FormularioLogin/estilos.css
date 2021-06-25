@@ -6,14 +6,12 @@ form{
     max-width: 90%;   
     margin: auto;   
 }
-
 label{
     display: block;
     font-style: italic;
     font-weight: bold;
     width: 100%;
 }
-
 input{
     display: block;
     width: 100%;
@@ -21,7 +19,6 @@ input{
     margin-bottom: 15px;
     font-family: sans-serif;
 }
-
 button{
     width: 100%;
     font-size: 20px;

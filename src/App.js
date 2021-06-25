@@ -2,14 +2,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import NavBar from './Componentes/NavBar'
 
-import Home from './paginas/Home'
-import Pagina404 from './paginas/Pagina404'
-import Produtos from './paginas/Produtos/'
-import Servicos from './paginas/Servicos'
-import Produto from './paginas/Produtos/Produto'
-import Servico from './paginas/Servicos/Servico'
 import FormularioCadastro from './Componentes/FormularioCadastro'
 import FormularioLogin from './Componentes/FormularioLogin'
+import Home from './Paginas/Home'
+import Pagina404 from './Paginas/Pagina404'
+import Produtos from './Paginas/Produtos'
+import Servicos from './Paginas/Servicos'
+import Produto from './Paginas/Produtos/Produto'
+import Servico from './Paginas/Servicos/Servico'
 
 
 function App() {

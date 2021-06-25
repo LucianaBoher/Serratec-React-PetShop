@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react"
-
 import http from "../../HTTP/http"
-
 import CardItensServicos from "./CardItensServicos"
 
 

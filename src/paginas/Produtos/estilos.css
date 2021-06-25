@@ -1,23 +1,20 @@
 .cartao {
-    display: inline-block;
-    width: 400px;
-    padding: 30px;
+    display: inline-block;    
+    padding: 35px;    
+    width: 18rem;
+    margin: 0 60px;
+    margin-top: 50px;
 }
 .cartao .corpo {
-    padding: 40px;
-    width: 270px;
-    min-width: 270px;    
-    height: 270px;
-    display: block;
+    padding: 50px;    
     justify-content: center;
     text-align: center;
     align-items: center;
     background-color: rgb(179, 190, 170);
-    border: 3px solid rgb(103, 117, 81);
-    margin: 8px;
+    border: 3px solid rgb(103, 117, 81);    
     font-size: 15px;
     font-weight: bold;
     color: black;
     box-sizing: border-box;
     border-radius: 45px;  
-}
+}   
