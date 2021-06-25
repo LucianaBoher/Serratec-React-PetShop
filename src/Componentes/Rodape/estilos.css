@@ -1,0 +1,13 @@
+.footer-luna{
+    padding: 15px;
+    background-color: #9ac6db;
+    position: fixed;    
+    bottom: 0;
+    width: 100%;
+}
+.footer-luna p{    
+    margin: 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}

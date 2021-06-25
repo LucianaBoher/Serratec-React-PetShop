@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import NavBar from './Componentes/NavBar'
+import Rodape from './Componentes/Rodape'
 
 import FormularioCadastro from './Componentes/FormularioCadastro'
 import FormularioLogin from './Componentes/FormularioLogin'
@@ -44,6 +45,7 @@ function App() {
           <Pagina404 />
         </Route>
       </Switch>
+      <Rodape />
     </BrowserRouter>
 
   );
